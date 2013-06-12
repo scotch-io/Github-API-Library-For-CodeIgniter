@@ -46,7 +46,7 @@ class Secure extends CI_Controller {
 	}
 
 	// Create a Gist Saying that you love this library
-	public function create_gists()
+	public function create_gist()
 	{
 		$this->stencil->title('Create Gists');
 

@@ -3,7 +3,7 @@ Github-API-Library-For-CodeIgniter
 
 Simple Github library for CodeIgniter. Supports GitHub OAuth API and all the other cool little functions and calls they have.
 
-[View the Live Demo](http://github-api-library-for-codeigniter.scotch.io)
+## [View the Live Demo](http://github-api-library-for-codeigniter.scotch.io)
 
 ![CodeIgniter Github](http://scotch.io/images/github-codeigniter.png "CodeIgniter Github")
 
@@ -45,15 +45,15 @@ This will return FALSE if the user is not logged in. If the user isn't logged in
 
 You need to send them to the GitHub login URL. You can do this by having them click there via an `<a>` tag or just by redirecting them. This is how you get the login URL:
 
-> `$this->github->get_login_url()`
+> `$this->github->get_login_url();`
 
 That's it! Make sure that wherever your redirect uri config option is set has this function in it receiving it:
 
-> `$this->github->authorize()`
+> `$this->github->authorize();`
 
 This function pretty much does everything for you -- checking all sorts of OAuth verification checks. If the function returns FALSE, the login failed. You get any error messages like this:
 
-> `$this->github->get_error()`
+> `$this->github->get_error();`
 
 See the `authorize` controller to understand better how it works. Invoking this method will also work for any other times an error needs to be caught.
 
@@ -61,21 +61,21 @@ See the `authorize` controller to understand better how it works. Invoking this 
 
 This function is intended to make all GitHub REST API calls. This is how it is broken down:
 
-> `public function curl($uri, $verb = 'GET', $body = array(), $headers = FALSE)`
+> `public function curl($uri, $verb = 'GET', $body = array(), $headers = FALSE);`
 
 So whenever you call this function, it will automatically build a URL with the access token based on the arguments you submit.
 
 For example, if you want to get list your gists, it will look like this:
 
-> `$this->github->curl('gists').
+> `$this->github->curl('gists');`
 
 Simple. if you need to do something more complicated it could look like this:
 
-> '$this->github->curl('gists/'.$id, 'PATCH', $body);'
+> `$this->github->curl('gists/'.$id, 'PATCH', $body);`
 
 It can even return HTTP Codes (perfect for REST). It would look something like this:
 
-> $this->github->curl('gists/'.$id.'/star', 'GET', '', TRUE);
+> `$this->github->curl('gists/'.$id.'/star', 'GET', '', TRUE);`
 
 ## Notes / To-Dos
  - Throw Errors for try/catch versus returning FALSE all the time

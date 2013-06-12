@@ -23,8 +23,7 @@
 			<h2>Simple as can be</h2>
 			<p>This Library is easy to use. It's intended to be as simple as possible to implement.</p>
 			<p>It has two branches: one that is out of the box and another that is just the library.</p>
-			<h3><?php echo anchor('#', 'Read the Docs'); ?></h3>
-			<h3><?php echo anchor('#', 'Download on GitHub'); ?></h3>
+			<h3><?php echo anchor('https://github.com/scotch-io/Github-API-Library-For-CodeIgniter', 'Download on GitHub'); ?></h3>
 		</div>
 		<div class="span7">
 			<h2>Open source</h2>

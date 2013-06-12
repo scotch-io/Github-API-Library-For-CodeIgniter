@@ -21,9 +21,9 @@
 				<div class="nav-collapse pull-right">
 					<ul class="nav">
 						<li><?php echo anchor(base_url(), 'Home'); ?></li>
-						<li><?php echo anchor('#', 'GitHub'); ?></li>
-						<li><?php echo anchor('#', 'Docs'); ?></li>
-						<li><?php echo anchor('#', 'License'); ?></li>
+						<li><?php echo anchor('https://github.com/scotch-io/Github-API-Library-For-CodeIgniter', 'GitHub'); ?></li>
+						<li><?php echo anchor('https://github.com/scotch-io/Github-API-Library-For-CodeIgniter', 'Docs'); ?></li>
+						<li><?php echo anchor('license', 'License'); ?></li>
 						<?php if ($this->github->get_access_token()) : ?>
 						<li><?php echo anchor('secure/logout', '<i class="icon-lock"></i>Logout'); ?></li>
 						<?php endif; ?>
