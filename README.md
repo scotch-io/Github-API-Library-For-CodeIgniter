@@ -3,6 +3,8 @@ Github-API-Library-For-CodeIgniter
 
 Simple Github library for CodeIgniter. Supports GitHub OAuth API and all the other cool little functions and calls they have.
 
+[View the Live Demo](http://github-api-library-for-codeigniter.scotch.io)
+
 ![CodeIgniter Github](http://scotch.io/images/github-codeigniter.png "CodeIgniter Github")
 
 ## What is this?
