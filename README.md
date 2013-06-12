@@ -9,9 +9,15 @@ Simple Github library for CodeIgniter. Supports GitHub OAuth API and all the oth
 
 It's an out of the box starter for using OAuth and GitHub. It uses the latest version of Codeigniter and has a running demo so all you have to do is set your config keys and you're done. It's one of my last CodeIgniter projects that I want to open-source before embracing the Laravel world entirely.
 
+## Quick Start
+
+- Clone this repo
+- Create a GitHub Application on GitHub.com
+- Update `/application/config/github.php`
+
 ## Are all these files required?
 
-No.There's a lot of stuff that this comes with. You don't need most of these files to get started. For example, I use our [Stencil Codeigniter Template Library](http://github.com/scotch-io/stencil) to do the templating. You don't have to do that.
+No. There's a lot of stuff that this comes with. You don't need most of these files to get started. For example, I use [Stencil Codeigniter Template Library](http://github.com/scotch-io/stencil) to do the templating. You don't have to do that.
 
 ### Requried Files:
 
